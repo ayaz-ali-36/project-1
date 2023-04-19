@@ -1,0 +1,132 @@
+* {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
+
+/* navbar */
+.logo img {
+  width: 100px;
+  height: 100px;
+  top: 2%;
+  left: 2%;
+}
+.header {
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(16, 16, 55, 0.137);
+}
+
+/* nav */
+/* links */
+a:hover {
+  color: red;
+  cursor: pointer;
+}
+.links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+ul li a {
+  color: black;
+}
+.nav ul span {
+  display: none;
+}
+/* menu */
+.menu {
+  background-image: url(../img/wooden-table-food-top-view-cafe-102532611.jpg);
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+
+.one {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  text-align: center;
+}
+.primary {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+.one > p {
+  font-size: 1rem;
+  color: wheat;
+}
+#btn {
+  padding: 10px;
+  border: 2px solid snow;
+  border-radius: 28px;
+  background-color: rgba(0, 0, 0, 0.036);
+}
+#btn a {
+  color: greenyellow;
+}
+#btn a:hover {
+  color: brown;
+}
+/* services */
+.services {
+  margin: 0;
+}
+.services > h2 {
+  text-align: center;
+  color: black;
+  padding: 20px;
+}
+.images {
+  display: flex;
+}
+.image > img {
+  margin-top: 20px;
+}
+
+.image {
+  border: 2px solid brown;
+  text-align: center;
+  border-radius: 28px;
+  background: #f2f2f2f2;
+  margin: 5px;
+  margin-top: 5px;
+}
+
+/* responsive */
+@media screen and (max-width: 890px) {
+  .nav ul li a {
+    display: none;
+  }
+  span {
+    display: inline-block;
+  }
+  .nav ul span {
+    display: block;
+    font-size: 30px;
+    color: blue;
+  }
+  .images {
+    display: block;
+    margin: 35px;
+  }
+  .image {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .image img {
+    width: 80%;
+  }
+  .one {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    text-align: center;
+  }
+}
